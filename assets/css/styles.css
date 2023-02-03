@@ -1,3 +1,15 @@
 body {
   background-color: rgb(138, 129, 129);
 }
+
+jokeBtn {
+  background-color: red;
+  padding: 25px;
+  margin: 25px;
+}
+
+memeBtn {
+  background-color: red;
+  padding: 25px;
+  margin: 25px;
+}
