@@ -57,7 +57,7 @@ get_joke_of_the_day()
     // .then(function (likeDis) {
     //     console.log(likeDis);
     //   })
-    })
+  
   
   // If choice = funny meme:
 // } else(meme){
