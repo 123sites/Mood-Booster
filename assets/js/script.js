@@ -6,13 +6,13 @@ var memeBtn = document
   .addEventListener("click", choice);
 function choice() {
   //  API Links:
-  jokeApiKey = "";
-  memeApiKey = "IcgIu9A1Tg9S";
+  memeApiKey = "";
+  jokeApiKey = "IcgIu9A1Tg9S";
   //   https://jokes.one/api/joke/
   // let joke = `https//api......q=${}....${jokeApiKey}`;
   //  (has memes and jokes)    url: 'https://random-stuff-api.p.rapidapi.com/joke',
-  let meme = `https://random-stuff-api.p.rapidapi.com/joke/random`;
-  fetch(meme, {
+  let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
+  fetch(joke, {
     params: {exclude: "dirty, men, black, sex, sarcasm, insults, blonde, christian, easter, animal, rude, attitude, life," },
     headers: {
       Authorization: "IcgIu9A1Tg9S",
