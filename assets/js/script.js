@@ -4,37 +4,87 @@ var jokeBtn = document
 var memeBtn = document
   .getElementById("memeBtn")
   .addEventListener("click", choice);
-function choice() {
 
-  let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
-  fetch(joke, {
-    params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
-    headers: {
-      'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
-      'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
-    },
-  }).then(function (response) {
-    console.log(response);
-    return response.json()
-  }).then(function(data){
-    console.log(data);
-  },)
 
-let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
-fetch(meme, {
-      headers: {
-        "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
-        "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
-      },
-  }).then(function (response) {
-    console.log(response);
-    return response.json()
-  }).then(function(data){
-    console.log(data);
-  },)
+
+function myFunction() {
+  document.createElement("BUTTON");
+  document.createTextNode("Click me");
+  // x.appendChild(t);
+  // document.body.appendChild(x);
 }
 
+
+
+
+
+function choice() {
+  // FIXES 429 ERROR???
+//   function handleErrors(response) {
+//     if (!response.ok) {
+//         throw Error(response.statusText);
+//     }
+//     return response;
+// }
+// fetch("http://httpstat.us/500")
+//     .then(handleErrors)
+//     .then(response => console.log("ok") )
+//     .catch(error => console.log(error) );
+
+
+
+  // fetch("http://httpstat.us/500")
+  //   .then(function(response) {
+  //       if (!response.ok) {
+  //           throw Error(response.statusText);
+  //       }
+  //   })
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  // let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
+  // fetch(joke, {
+  //   params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
+  //   headers: {
+  //     'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
+  //     'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
+  //   },
+  // }).then(function (response) {
+  //   console.log(response);
+  //   return response.json()
+  // }).then(function(data){
+  //   console.log(data);
+  // },)
+
+// let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
+// fetch(meme, {
+//       headers: {
+//         "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
+//         "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
+
+//       },
+//   }).then(function (response) {
+//     console.log(response);
+//     return response.json()
+//   }).then(function(data){
+//     console.log(data);
+//   },)
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 choice()
+
+
+
+
+
+
+
+
+
+
+
 
 // If choice = funny meme:
 // } else(meme){
