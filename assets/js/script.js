@@ -5,90 +5,36 @@ var memeBtn = document
   .getElementById("memeBtn")
   .addEventListener("click", choice);
 function choice() {
-  //  API Links:
-  memeApiKey = "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f'";
-  // jokeApiKey = "IcgIu9A1Tg9S";
-  //   https://jokes.one/api/joke/
-  // let joke = `https//api......q=${}....${jokeApiKey}`;
-  //  (has memes and jokes)    url: 'https://random-stuff-api.p.rapidapi.com/joke',
 
-  // JOKE API IS BELOW:
-//   let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
-//   fetch(joke, {
-//     params: {exclude: "dirty, men, black, sex, sarcasm, insults, blonde, christian, easter, animal, rude, attitude, life," },
-//     headers: {
-//       Authorization: "IcgIu9A1Tg9S",
-//       "x-rapidapi-host": "random-stuff-api.p.rapidapi.com",
-//       "x-rapidapi-key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
-//     },
-//   }).then(function (response) {
-//     console.log(response);
-//     return response.json()
-//   }).then(function(data){
-//     console.log(data);
-//   }) 
-// };
+  let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
+  fetch(joke, {
+    params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
+    headers: {
+      'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
+      'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
+    },
+  }).then(function (response) {
+    console.log(response);
+    return response.json()
+  }).then(function(data){
+    console.log(data);
+  },)
 
-
-
-
-let url = 'https://memes9.p.rapidapi.com/api/list?genre=memes&type=top';
-
-let options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f',
-    'X-RapidAPI-Host': 'memes9.p.rapidapi.com'
-  }
-};
-
-fetch(url, options)
-	.then(res => res.json())
-	.then(json => console.log(json))
-	.catch(err => console.error('error:' + err));
+let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
+fetch(meme, {
+      headers: {
+        "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
+        "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
+      },
+  }).then(function (response) {
+    console.log(response);
+    return response.json()
+  }).then(function(data){
+    console.log(data);
+  },)
 }
+
 choice()
-// fetch(choice);{
-//   // When click on choice = funny meme or joke.
-//   $(choice).on("click", function () {
-//     // If choice = joke:
-//     if (joke) {
-//       // retrieves the text onclick
-//       var joke = $(this).text();
-//       .then(function (joke) {
-//         console.log(function (joke));
-
-// function get_joke_of_the_day() {
-//   var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function () {
-//     if (this.readyState == 4 && this.status == 200) {
-//       // Access the result here
-//       alert(this.responseText);
-//     }
-//   };
-//   xhttp.open("GET", "https://api.jokes.one/jod/categories", true);
-//   xhttp.setRequestHeader("Content-type", "application/json");
-//   xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
-//   xhttp.send();
-// }
-// }
-// get_joke_of_the_day();
-
-// $("#joke").empty();
-// for (let i = 1; i < ?.list.length; i++) {
-//     if (futureResponse.list[i].dt_txt.includes("12:00:00")) {
-//         var cityInfo = {
-//             date: futureResponse.list[i].dt,
-//             icon: futureResponse.list[i].weather[0].icon,
-//             temp: futureResponse.list[i].main.temp,
-//             wind: futureResponse.list[i].wind.speed,
-//             humidity: futureResponse.list[i].main.humidity
-//         };
-// .then(function (response) {
-// return response.json(jokeApiKey);
-// .then(function (likeDis) {
-//     console.log(likeDis);
-//   })
 
 // If choice = funny meme:
 // } else(meme){
@@ -163,3 +109,117 @@ choice()
 //     document.getElementById("searchBtn").click();
 // }
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // jokeApiKey = "IcgIu9A1Tg9S";
+  // https://jokes.one/api/joke/
+  // let joke = `https//api......q=${}....${jokeApiKey}`;
+
+  //  (has memes and jokes)    url: 'https://random-stuff-api.p.rapidapi.com/joke',
+  // let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
+
+  // fetch(joke, {
+  //   params: {exclude: "dirty, men, black, sex, sarcasm, insults, blonde, christian, easter, animal, rude, attitude, life,"},
+  //   headers: {
+  //     Authorization: "IcgIu9A1Tg9S",
+  //     "x-rapidapi-host": "random-stuff-api.p.rapidapi.com",
+  //     "x-rapidapi-key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
+  //   },
+  // }).then(function (response) {
+  //   console.log(response);
+  //   return response.json()
+  // }).then(function(data){
+  //   console.log(data);
+  // },)
+
+  // let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
+  // fetch(url, options)
+// 	.then(res => res.json())
+// 	.then(json => console.log(json))
+// 	.catch(err => console.error('error:' + err));
+// }
+// }
+//   let meme = `https://programming-memes-images.p.rapidapi.com/v1/memes`;
+//   fetch(meme, {
+//     params: {}
+//   let options = {
+// 	headers: {
+// 		'X-RapidAPI-Key': '52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f',
+// 		'X-RapidAPI-Host': 'programming-memes-images.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://programming-memes-images.p.rapidapi.com/v1/memes', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+// const settings = {
+// 	"async": true,
+// 	"crossDomain": true,
+// 	"url": "https://programming-memes-images.p.rapidapi.com/v1/memes",
+// 	"method": "GET",
+// 	"headers": {
+// 		"X-RapidAPI-Key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
+// 		"X-RapidAPI-Host": "programming-memes-images.p.rapidapi.com"
+// 	}
+// };
+
+// $.ajax(settings).done(function (response) {
+// 	console.log(response);
+// }); 
+
+
+// let meme = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f',
+// 		'X-RapidAPI-Host': 'reddit-meme.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://reddit-meme.p.rapidapi.com/memes/trending', meme)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+
+// },
+
+// fetch(choice);{
+//   // When click on choice = funny meme or joke.
+//   $(choice).on("click", function () {
+//     // If choice = joke:
+//     if (joke) {
+//       // retrieves the text onclick
+//       var joke = $(this).text();
+//       .then(function (joke) {
+//         console.log(function (joke));
+
+// function get_joke_of_the_day() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       // Access the result here
+//       alert(this.responseText);
+//     }
+//   };
+//   xhttp.open("GET", "https://api.jokes.one/jod/categories", true);
+//   xhttp.setRequestHeader("Content-type", "application/json");
+//   xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
+//   xhttp.send();
+// }
+
+// get_joke_of_the_day();
