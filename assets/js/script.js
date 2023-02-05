@@ -1,11 +1,8 @@
-var jokeBtn = document
-  .getElementById("jokeBtn")
-  .addEventListener("click", choice);
-var memeBtn = document
-  .getElementById("memeBtn")
-  .addEventListener("click", choice);
+var jokeBtn = document.getElementById("jokeBtn");
+  document.addEventListener("click", choice);
 
-
+var memeBtn = document.getElementById("memeBtn")
+  document.addEventListener("click", choice);
 
 function myFunction() {
   document.createElement("BUTTON");
@@ -14,11 +11,11 @@ function myFunction() {
   // document.body.appendChild(x);
 }
 
-
-
-
-
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function choice() {
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
   // FIXES 429 ERROR???
 //   function handleErrors(response) {
 //     if (!response.ok) {
@@ -43,19 +40,19 @@ function choice() {
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-  // let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
-  // fetch(joke, {
-  //   params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
-  //   headers: {
-  //     'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
-  //     'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
-  //   },
-  // }).then(function (response) {
-  //   console.log(response);
-  //   return response.json()
-  // }).then(function(data){
-  //   console.log(data);
-  // },)
+//   let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
+//   fetch(joke, {
+//     params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
+//     headers: {
+//       'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
+//       'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
+//     },
+//   }).then(function (response) {
+//     console.log(response);
+//     return response.json()
+//   }).then(function(data){
+//     console.log(data);
+//   },)
 
 // let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
 // fetch(meme, {
@@ -70,13 +67,38 @@ function choice() {
 //   }).then(function(data){
 //     console.log(data);
 //   },)
-}
+// }
+
+  // localStorage.clear();
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+}
 
 choice()
 
 
+// KEEP & MODIFY OR DELETE??????????????
+// var badRequestUrl = 'https://api.github.com/unicorns';
+// var redirectUrl = './404.html';
 
+// fetch(badRequestUrl).then(function (response) {
+//   // Check the response value is equal to 404.
+//   if (response.status === 404) {
+//     // If the page is not on the 404 page, redirect to it.
+//     setTimeout(() => {
+//       document.location.replace(redirectUrl);
+//     }, 2000);
+//   } else {
+//     return response.json();
+//   }
+// });
+
+
+// fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
+//   // The browser fetches the resource from the remote server without first looking in the cache.
+//   // The browser will then update the cache with the downloaded resource.
+//   cache: 'reload',
+// })
 
 
 
