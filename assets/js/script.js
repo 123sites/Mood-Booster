@@ -6,26 +6,47 @@ var memeBtn = document
   .addEventListener("click", choice);
 function choice() {
   //  API Links:
-  memeApiKey = "";
-  jokeApiKey = "IcgIu9A1Tg9S";
+  memeApiKey = "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f'";
+  // jokeApiKey = "IcgIu9A1Tg9S";
   //   https://jokes.one/api/joke/
   // let joke = `https//api......q=${}....${jokeApiKey}`;
   //  (has memes and jokes)    url: 'https://random-stuff-api.p.rapidapi.com/joke',
-  let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
-  fetch(joke, {
-    params: {exclude: "dirty, men, black, sex, sarcasm, insults, blonde, christian, easter, animal, rude, attitude, life," },
-    headers: {
-      Authorization: "IcgIu9A1Tg9S",
-      "x-rapidapi-host": "random-stuff-api.p.rapidapi.com",
-      "x-rapidapi-key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
-    },
-  }).then(function (response) {
-    console.log(response);
-    return response.json()
-  }).then(function(data){
-    console.log(data);
-  }) 
+
+  // JOKE API IS BELOW:
+//   let joke = `https://random-stuff-api.p.rapidapi.com/joke/random`;
+//   fetch(joke, {
+//     params: {exclude: "dirty, men, black, sex, sarcasm, insults, blonde, christian, easter, animal, rude, attitude, life," },
+//     headers: {
+//       Authorization: "IcgIu9A1Tg9S",
+//       "x-rapidapi-host": "random-stuff-api.p.rapidapi.com",
+//       "x-rapidapi-key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
+//     },
+//   }).then(function (response) {
+//     console.log(response);
+//     return response.json()
+//   }).then(function(data){
+//     console.log(data);
+//   }) 
+// };
+
+
+
+
+let url = 'https://memes9.p.rapidapi.com/api/list?genre=memes&type=top';
+
+let options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f',
+    'X-RapidAPI-Host': 'memes9.p.rapidapi.com'
+  }
 };
+
+fetch(url, options)
+	.then(res => res.json())
+	.then(json => console.log(json))
+	.catch(err => console.error('error:' + err));
+}
 choice()
 // fetch(choice);{
 //   // When click on choice = funny meme or joke.
@@ -37,20 +58,20 @@ choice()
 //       .then(function (joke) {
 //         console.log(function (joke));
 
-function get_joke_of_the_day() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      // Access the result here
-      alert(this.responseText);
-    }
-  };
-  xhttp.open("GET", "https://api.jokes.one/jod/categories", true);
-  xhttp.setRequestHeader("Content-type", "application/json");
-  xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
-  xhttp.send();
-}
-
+// function get_joke_of_the_day() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       // Access the result here
+//       alert(this.responseText);
+//     }
+//   };
+//   xhttp.open("GET", "https://api.jokes.one/jod/categories", true);
+//   xhttp.setRequestHeader("Content-type", "application/json");
+//   xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
+//   xhttp.send();
+// }
+// }
 // get_joke_of_the_day();
 
 // $("#joke").empty();
