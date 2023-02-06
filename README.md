@@ -2,7 +2,7 @@
 ## Description 
 
 - Acceptance Criteria
-I made a weather dashboard that would run in the browser and feature dynamically updated HTML and CSS.  It shows the weather outlook for multiple cities for 5 days.  We used [API](https://) to get the jokes and [API](https://) to get the memes.  We used local storage to store the information in-regards to what the client liked or disliked.  If they liked it, they can see it another time.  If they dislike it, they won't see it again.  In addition:
+We created an App where  We used [API](https://rapidapi.com/humorapi/api/humor-jokes-and-memes) to get the jokes and [API](https://rapidapi.com/thedeltaaw-NUf4SqoNoc/api/reddit-meme/) to get the memes.  We used local storage to store the information in-regards to what the client liked or disliked.  If they liked it, they can see it another time.  If they dislike it, they won't see it again.  In addition:
 
 1) 
 

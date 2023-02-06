@@ -1,83 +1,74 @@
+// KEEP BELOW, LINES 1-38 WORKS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 var jokeBtn = document.getElementById("jokeBtn");
   document.addEventListener("click", choice);
 
 var memeBtn = document.getElementById("memeBtn")
   document.addEventListener("click", choice);
 
-function myFunction() {
-  document.createElement("BUTTON");
-  document.createTextNode("Click me");
-  // x.appendChild(t);
-  // document.body.appendChild(x);
-}
-
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function choice() {
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+  // let joke = `https://sv443.net/jokeapi/v2/?ref=apilist.fun#safe-mode`;
 
-  // FIXES 429 ERROR???
-//   function handleErrors(response) {
-//     if (!response.ok) {
-//         throw Error(response.statusText);
-//     }
-//     return response;
-// }
-// fetch("http://httpstat.us/500")
-//     .then(handleErrors)
-//     .then(response => console.log("ok") )
-//     .catch(error => console.log(error) );
+// KEEP MEME BELOW, REDO JOKE API (Joke error on line ) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//   let joke = `https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`;
+//     fetch(joke, {
+//       params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"}
+//   }).then(function (response) {
+//     console.log(response);
+//     return response.json()
+//   }).then(function(data){
+//     console.log(data);
+//   },)
 
+// let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
+// fetch(meme, {
+//       headers: {
+//         "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
+//         "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
 
-
-  // fetch("http://httpstat.us/500")
-  //   .then(function(response) {
-  //       if (!response.ok) {
-  //           throw Error(response.statusText);
-  //       }
-  //   })
-
-
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-  let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
-  fetch(joke, {
-    params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
-    headers: {
-      'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
-      'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
-    },
-  }).then(function (response) {
-    console.log(response);
-    return response.json()
-  }).then(function(data){
-    console.log(data);
-  },)
-
-let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
-fetch(meme, {
-      headers: {
-        "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
-        "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
-
-      },
-  }).then(function (response) {
-    console.log(response);
-    return response.json()
-  }).then(function(data){
-    console.log(data);
-  },)
+//       },
+//   }).then(function (response) {
+//     console.log(response);
+//     return response.json()
+//   }).then(function(data){
+//     console.log(data);
+//   },)
 }
-
-  localStorage.clear();
-
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 choice()
 
+  // <input type="submit" id="btn" value="Generate Jokes" />
+  // <input type="submit" id="btn" value="Generate Memes" />
 
-// KEEP & MODIFY OR DELETE??????????????
+// $().append(choice);
+
+// // LIKE/DISLIKE BUTTONS - LOCAL STORAGE
+// // likeDis click event & localStorage
+// $("#likeDis").on("click", function (event) {
+//   event.preventDefault();
+//   var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =]
+
+//   // Below stores the choice in localStorage
+//   localStorage.setItem("choice", JSON.stringify(likeDis));
+//   console.log("choice", JSON.stringify(likeDis));
+
+// var likeBtn = document.getElementById('likeBtn')
+// var disBtn = document.getElementById('disBtn')
+// var getChoice = document.getElementById("#likeDis").addEventListener("click", choice);
+
+// // When the user clicks like or dislike:
+// $(document).ready(function () {
+//   // Retrieves the like/dislike data and stores it into localStorage:
+//   var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
+//   // likeDisArr = like/dislike array
+//   if (likeDisArr !== null) {
+//     console.log(`likeDisArr localStorage`);
+//   }
+// });
+// })})}
+
+
+// END>>>>>>>>>>> KEEP, MODIFY, OR DELETE ??????????????
 // var badRequestUrl = 'https://api.github.com/unicorns';
 // var redirectUrl = './404.html';
 
@@ -93,70 +84,7 @@ choice()
 //   }
 // });
 
-
-// fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
-//   // The browser fetches the resource from the remote server without first looking in the cache.
-//   // The browser will then update the cache with the downloaded resource.
-//   cache: 'reload',
-// })
-
-
-
-
-
-
-
-
-
-// If choice = funny meme:
-// } else(meme){
-//   .then(function (response) {
-//   return response.json(meme);
-//   .then(function (likeDis) {
-//     console.log(meme);
-//     // .then(function (meme) {
-//     //   console.log(function meme);
-//     //   $("#meme").empty();
-//     //   for (let i = 1; i < futureResponse.list.length; i++) {
-//     //       if (futureResponse.list[i].dt_txt.includes("12:00:00")) {
-//     //           var cityInfo = {
-//     //               date: futureResponse.list[i].dt,
-//     //               icon: futureResponse.list[i].weather[0].icon,
-//     //               temp: futureResponse.list[i].main.temp,
-//     //               wind: futureResponse.list[i].wind.speed,
-//     //               humidity: futureResponse.list[i].main.humidity
-//   })
-// }
-// },
-
-// $().append(choice);
-
-// // LIKE/DISLIKE
-
-// // likeDis click event & localStorage
-// $("#likeDis").on("click", function (event) {
-//   event.preventDefault();
-//   var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =]
-
-//   // Below stores the choice in localStorage
-//   localStorage.setItem("choice", JSON.stringify(likeDis));
-//   console.log("choice", JSON.stringify(likeDis));
-
-// var likeBtn = document.getElementById('likeBtn')
-// var disBtn = document.getElementById('disBtn')
-// var getChoice = document.getElementById("?").addEventListener("click", choice);
-
-// // When the user clicks like or dislike:
-// $(document).ready(function () {
-//   // Retrieves the like/dislike data and stores it into localStorage:
-//   var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
-//   // ldArr = like/dislike array
-//   if (likeDisArr !== null) {
-//     console.log(`likeDisArr localStorage`);
-//   }
-// });
-// })})}
-
+// DELETE BELOW??????
 // button.addEventListener('click', getChoice);
 
 // Below is for getting to the site and accessing jokes/memes in localStorage.
@@ -169,32 +97,7 @@ choice()
 // }
 // loadUp();
 
-// // Get the input field
-// var input = document.getElementById("enterCity");
-// // Execute a function when the user presses a key on the keyboard
-// input.addEventListener("keypress", function (event) {
-//   // If the user presses the "Enter" key on the keyboard
-//   if (event.key === "Enter") {
-//     // Cancel the default action, if needed
-//     event.preventDefault();
-//     // Trigger the button element with a click
-//     document.getElementById("searchBtn").click();
-// }
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// PREVIOUS JOKE, DELETE BELOW ??????
   // jokeApiKey = "IcgIu9A1Tg9S";
   // https://jokes.one/api/joke/
   // let joke = `https//api......q=${}....${jokeApiKey}`;
@@ -253,7 +156,6 @@ choice()
 // 	console.log(response);
 // }); 
 
-
 // let meme = {
 // 	method: 'GET',
 // 	headers: {
@@ -267,9 +169,29 @@ choice()
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
-
 // },
 
+// fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
+//   // The browser fetches the resource from the remote server without first looking in the cache.
+//   // The browser will then update the cache with the downloaded resource.
+//   cache: 'reload',
+// })
+
+  // let joke = `https://humor-jokes-and-memes.p.rapidapi.com/jokes/search?exclude-tags=nsfw&keywords=rocket&min-rating=7&include-tags=one_liner&number=3&max-length=200`;
+  // fetch(joke, {
+  //   params: {exclude: "nsfw, insults, jewish, religious, dark, racist, sexual, sexist,"},
+  //   headers: {
+  //     'X-RapidAPI-Key': '9caa14e070msh757ef190f56b5f8p137339jsn29e91c3f8df1',
+  //     'X-RapidAPI-Host': 'humor-jokes-and-memes.p.rapidapi.com'
+  //   },
+  // }).then(function (response) {
+  //   console.log(response);
+  //   return response.json()
+  // }).then(function(data){
+  //   console.log(data);
+  // },)
+
+// DELETE BELOW????? 
 // fetch(choice);{
 //   // When click on choice = funny meme or joke.
 //   $(choice).on("click", function () {
