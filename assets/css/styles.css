@@ -34,7 +34,7 @@ p {
   border-radius: 5px;
 }
 
-#jokeBtn {
+#jokeBtn, #memeBtn {
   background-color: #ab0303;
   border-width: 10px;
   border-color: black;
@@ -49,20 +49,10 @@ p {
 }
 
 #memeBtn {
-    background-color: #ab0303;
-    border-width: 10px;
-    border-color: black;
-    font-size: 17px;
-    color: yellow;
     padding: 12px 25px;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
 }
 
-#likeBtn {
+#likeBtn, #disBtn {
   background-color: #ab0303;
   border-width: 10px;
   border-color: black;
@@ -77,15 +67,5 @@ p {
 }
 
 #disBtn {
-    background-color: #ab0303;
-    border-width: 10px;
-    border-color: black;
-    font-size: 17px;
-    color: yellow;
     padding: 12px 23px;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
 }
