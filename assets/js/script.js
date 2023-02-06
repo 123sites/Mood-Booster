@@ -1,4 +1,5 @@
-// KEEP BELOW, LINES 1-38 WORKS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// KEEP BELOW, LINES 1-39 WORKS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 var jokeBtn = document.getElementById("jokeBtn");
   document.addEventListener("click", choice);
 
@@ -34,8 +35,9 @@ function choice() {
 //     console.log(data);
 //   },)
 }
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 choice()
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
   // <input type="submit" id="btn" value="Generate Jokes" />
   // <input type="submit" id="btn" value="Generate Memes" />
@@ -66,6 +68,7 @@ choice()
 //   }
 // });
 // })})}
+
 
 
 // END>>>>>>>>>>> KEEP, MODIFY, OR DELETE ??????????????
