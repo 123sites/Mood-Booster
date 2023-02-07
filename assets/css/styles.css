@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-  background-color: rgb(236, 228, 191);
+  background-image: linear-gradient(to right, #ff0000, #ffff00, #fbb000);
   font-size: 20px;
   text-align: center;
 }
@@ -41,15 +41,18 @@ p {
 }
 
 #display {
-  display: flex;
-  font-weight: bold;
-  max-width: 75px;
-  max-height: 75px;
-  margin: 129px;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 20px;
+    line-height: inherit;
+    width: auto;
+    display: flex;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 129px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
+
 
 #jokeBtn, #memeBtn {
     font-size: 25px;
