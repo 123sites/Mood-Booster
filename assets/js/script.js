@@ -22,10 +22,10 @@ function jokeChoice() {
     })
     .then(function (data) {
       console.log(data);
-      let h2=document.createElement("h2");
-      h2.textContent=data.joke;
+      let h2 = document.createElement("h2");
+      h2.textContent = data.joke;
       console.log(data.joke);
-      document.querySelector("#display").innerHTML=data.joke;
+      document.querySelector("#display").innerHTML = data.joke;
       // document.querySelector("#display").innerHTML="";
       // document.querySelector("#display").append(h2);
       document.querySelector(".getChoice").classList.add("hide");
@@ -33,16 +33,15 @@ function jokeChoice() {
     });
 }
 
-function memeChoice (){
+function memeChoice() {
   let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
   fetch(meme, {
     headers: {
       "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
       "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
     },
-  })
-    .then(function (response) {
-      console.log(response);
-      return response.json();
-    })
-  }
+  }).then(function (response) {
+    console.log(response);
+    return response.json();
+  });
+}
