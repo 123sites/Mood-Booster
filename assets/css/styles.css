@@ -1,0 +1,89 @@
+h1 {
+  color: red;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+body {
+  background-image: linear-gradient(to right, #ff0000, #ffff00, #fbb000);
+  font-size: 20px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 35px;
+  margin: 30px 0;
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+.box {
+  width: 550px;
+  padding: 40px 50px;
+  background-color: #0c0c0c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+#display {
+    line-height: inherit;
+    width: auto;
+    display: flex;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 129px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+#jokeBtn, #memeBtn {
+    font-size: 25px;
+    margin: 0px;
+    padding: 30px;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+
+#likeBtn, #disBtn {
+  background-color: #ab0303;
+  border-width: 10px;
+  border-color: black;
+  font-size: 17px;
+  color: yellow;
+  padding: 12px 33px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+#disBtn {
+    padding: 12px 23px;
+}
+
+.hide {
+  display: none;
+}

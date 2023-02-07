@@ -40,10 +40,84 @@ function memeChoice() {
       "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
       "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
     },
-  }).then(function (response) {
+ 
+  })
+  
+
+
+
+
+  .then(function (response) {
     console.log(response);
+
     return response.json();
-  });
+  })
+
+
+  //   .then(res => res.json())
+  //   .then(result => {
+  //   console.log(result)
+  //   img.src = result.message
+  // })
+  //   .catch(err=>console.log(err))
+  //   .then(function (response) {
+  //   console.log(response);
+  //   return response.json();
+  // });
+
+
+
+
+
+  // const image = document.getElementById("meme");
+
+
+// Converts any given blob into a base64 encoded string.
+// function convertBlobToBase64(blob) {
+//   return new Promise((resolve, reject) => {
+//     const reader = new FileReader();
+//     reader.onerror = reject;
+//     reader.onload = () => {
+//       resolve(reader.result);
+//     };
+//     reader.readAsDataURL(blob);
+
+//   });
+
+// }
+
+
+  // document.querySelector("#display").img = img.top;
+
+  // // document.querySelector("#display").innerHTML="";
+  // // document.querySelector("#display").append(img);
+
+
+  // let img = document.createElement("img");
+  // x.setAttribute("src", "meme");
+  // x.setAttribute("width", "304");
+  // x.setAttribute("height", "228");
+  // x.setAttribute("alt", "img");
+  // document.body.appendChild(img);
+
+  // console.log("#display");
+  // document.querySelector(".getChoice").classList.add("hide");
+  // console.log(".add")
+  // document.querySelector("#results").classList.remove("hide");
+  // console.log(".remove")
+
+  //   const a = document.createElement('a')
+  // a.style.setProperty('display', 'none')
+  // document.body.appendChild(a)
+  // a.download = meme.replace(/^.*[\\\/]/, '')
+  // a.href = imageBase64
+  // a.click()
+  // a.remove()
+
+
+  // .then(function (response) {
+  //   console.log(response);
+  //   return response.json();
 }
 
 // const fetchImage = async meme => {
