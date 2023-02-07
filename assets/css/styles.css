@@ -52,22 +52,16 @@ p {
 }
 
 #jokeBtn, #memeBtn {
-  background-color: #ab0303;
-  border-width: 10px;
-  border-color: black;
-  font-size: 17px;
-  color: yellow;
-  padding: 12px 30px;
-  margin-top: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
-  text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    padding: 30px;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
 }
 
-#memeBtn {
-    padding: 12px 25px;
-}
+
 
 #likeBtn, #disBtn {
   background-color: #ab0303;
