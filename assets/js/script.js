@@ -45,9 +45,17 @@ function memeChoice (){
       console.log(response);
       return response.json();
     })
-    .then(function (data) {
-      console.log(data);
-    });
+    // .then(function (data) {
+    //   console.log(data);
+    //   let h2=document.createElement("h2");
+    //   h2.textContent=data.meme;
+    //   console.log(data.meme);
+    //   document.querySelector("#display").innerHTML=data.meme;
+    //   // document.querySelector("#display").innerHTML="";
+    //   // document.querySelector("#display").append(h2);
+    //   document.querySelector(".getChoice").classList.add("hide");
+    //   document.querySelector("#results").classList.remove("hide");
+    // });
 }
 // const fetchImage = async meme => {
 //   const response = await fetch(meme)

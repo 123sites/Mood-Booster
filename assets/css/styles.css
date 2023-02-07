@@ -13,6 +13,7 @@ body {
   text-align: center;
 }
 
+
 p {
   font-size: 16px;
   font-weight: 400;
@@ -37,6 +38,17 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
+}
+
+#display {
+  display: flex;
+  font-weight: bold;
+  max-width: 75px;
+  max-height: 75px;
+  margin: 129px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 #jokeBtn, #memeBtn {
