@@ -71,29 +71,30 @@ function memeChoice() {
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-
 // like/dislike Btns clickEvents
-// $("#likeDis").on("click", function (event) {
-//   event.preventDefault();
-//   var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =]
+$("#likeDis").on("click", function (event) {
+  event.preventDefault();
+  var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =];
 
-//   // Below stores the choice in localStorage
-//   localStorage.setItem("choice", JSON.stringify(likeDis));
-//   console.log("choice", JSON.stringify(likeDis));
+  // Below stores the choice in localStorage
+  localStorage.setItem("choice", JSON.stringify(likeDis));
+  console.log("choice", JSON.stringify(likeDis));
+}
 
-// var likeBtn = document.getElementById('likeBtn')
-// var disBtn = document.getElementById('disBtn')
-// var getChoice = document.getElementById("#likeDis").addEventListener("click", choice);
+var likeBtn = document.getElementById("likeBtn");
+likeBtn.addEventListener("click", likeChoice);
 
-// // When the user clicks like or dislike:
-// $(document).ready(function () {
-//   // Retrieves the like/dislike data and stores it into localStorage:
-//   var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
-//   // likeDisArr = like/dislike array
-//   if (likeDisArr !== null) {
-//     console.log(`likeDisArr localStorage`);
-//   }
-// });
+var disBtn = document.getElementById("disBtn");
+disBtn.addEventListener("click", disChoice);
 
-// like/dislike localStorage
+var getChoice = document.getElementById("#getChoice").addEventListener("click", choice);
+
+// When the user clicks like or dislike:
+$(document).ready(function () {
+  // Retrieves the like/dislike data and stores it into localStorage:
+  var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
+  // likeDisArr = like/dislike array
+  if (likeDisArr !== null) {
+    console.log(`likeDisArr localStorage`);
+  }
+});
