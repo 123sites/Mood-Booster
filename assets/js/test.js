@@ -68,11 +68,13 @@ JSON.stringify(likeDisArray);
 
   function like() {
     // Get like array from local storage joke/meme (*data attributes, then push, div ID display textContent/img)
+    var like = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
     localStorage.setItem("likeStore");
     console.log(`likeStore`);
   }
 
   function dis() {
+    var dis = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
     localStorage.setItem("disStore");
     console.log(`disStore`);
   }
