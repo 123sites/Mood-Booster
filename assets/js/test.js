@@ -72,29 +72,46 @@ function memeChoice() {
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // like/dislike Btns clickEvents
-$("#likeDis").on("click", function (event) {
-  event.preventDefault();
-  var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =];
-
-  // Below stores the choice in localStorage
-  localStorage.setItem("choice", JSON.stringify(likeDis));
-  console.log("choice", JSON.stringify(likeDis));
-}
+// var getChoice = document.getElementById("#getChoice").addEventListener("click", choice);
 
 var likeBtn = document.getElementById("likeBtn");
-likeBtn.addEventListener("click", likeChoice);
+likeBtn.addEventListener("click", like);
 
 var disBtn = document.getElementById("disBtn");
-disBtn.addEventListener("click", disChoice);
+disBtn.addEventListener("click", dis);
+  
+var like = JSON.parse(localStorage.getItem("getChoice")) || [var dis =];
 
-var getChoice = document.getElementById("#getChoice").addEventListener("click", choice);
+function like(){
+  .then(function (response) {
+    console.log(response);
+    return response.json();
+  })
+}
 
-// When the user clicks like or dislike:
-$(document).ready(function () {
-  // Retrieves the like/dislike data and stores it into localStorage:
-  var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
-  // likeDisArr = like/dislike array
-  if (likeDisArr !== null) {
-    console.log(`likeDisArr localStorage`);
-  }
-});
+function dis(){
+  .then(function (response) {
+    console.log(response);
+    return response.json();
+  })
+}
+
+
+
+
+// $(".getChoice").on("click", function{
+
+//   // Below stores the choice in localStorage
+//   localStorage.setItem("choice", JSON.stringify(like));
+//   console.log("choice", JSON.stringify(dis));
+// }
+
+// // When the user clicks like or dislike:
+// $(document).ready(function () {
+//   // Retrieves the like/dislike data and stores it into localStorage:
+//   var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
+//   // likeDisArr = like/dislike array
+//   if (likeDisArr !== null) {
+//     console.log(`likeDisArr localStorage`);
+//   }
+// });
