@@ -50,8 +50,8 @@ function memeChoice() {
     .then(function (data) {
       console.log(data);
       let img = document.createElement("img");
-      
-      img.src=data[Math.floor(Math.random() * data.length)].image
+
+      img.src = data[Math.floor(Math.random() * data.length)].image
       console.log(img.meme);
       document.querySelector("#display").appendChild(img);
       document.querySelector(".getChoice").classList.add("hide");
@@ -71,47 +71,47 @@ function memeChoice() {
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-// like/dislike Btns clickEvents
-// var getChoice = document.getElementById("#getChoice").addEventListener("click", choice);
+// // like/dislike Btns clickEvents
+JSON.stringify(likeDisArray);{
 
 var likeBtn = document.getElementById("likeBtn");
 likeBtn.addEventListener("click", like);
 
 var disBtn = document.getElementById("disBtn");
 disBtn.addEventListener("click", dis);
-  
-var like = JSON.parse(localStorage.getItem("getChoice")) || [var dis =];
 
-function like(){
-  .then(function (response) {
-    console.log(response);
-    return response.json();
-  })
+  function like() {
+// Get like array from local storage joke/meme (*data attributes, then push, div ID display textContent/img)
+       
+    localStorage.setItem("likeStore",    );
+    console.log(`likeStore`,   );
+  }
+
+  function dis() {
+    localStorage.setItem("disStore",      );     
+    console.log(`disStore`,      );
+  }
 }
 
-function dis(){
-  .then(function (response) {
-    console.log(response);
-    return response.json();
-  })
-}
+// When the user clicks like or dislike:
+$(document).ready(function () {
+  // Retrieves the like/dislike data and stores it into localStorage:
+  var likeDisArr = JSON.parse(localStorage.setItem("like"));
+  // likeDisArr = like/dislike array
+  if (likeDisArr !== null) {
+    Storage:
+  var likeDisArr = JSON.parse(localStorage.setItem("dis"));
+    console.log(`likeDisArr localStorage`);
+  }
+});
+// window.location.reload()
 
 
 
 
-// $(".getChoice").on("click", function{
+
 
 //   // Below stores the choice in localStorage
 //   localStorage.setItem("choice", JSON.stringify(like));
 //   console.log("choice", JSON.stringify(dis));
 // }
-
-// // When the user clicks like or dislike:
-// $(document).ready(function () {
-//   // Retrieves the like/dislike data and stores it into localStorage:
-//   var likeDisArr = JSON.parse(localStorage.getItem("getChoice"));
-//   // likeDisArr = like/dislike array
-//   if (likeDisArr !== null) {
-//     console.log(`likeDisArr localStorage`);
-//   }
-// });
