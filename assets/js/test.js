@@ -6,6 +6,7 @@ jokeBtn.addEventListener("click", jokeChoice);
 var memeBtn = document.getElementById("memeBtn");
 memeBtn.addEventListener("click", memeChoice);
 
+// If choose joke:
 function jokeChoice() {
   // let joke = `https://sv443.net/jokeapi/v2/?ref=apilist.fun#safe-mode`;
 
@@ -33,6 +34,7 @@ function jokeChoice() {
     });
 }
 
+// If choose meme:
 function memeChoice() {
   let meme = `https://programming-memes-images.p.rapidapi.com/v1/memes`;
   fetch(meme, {
@@ -57,7 +59,7 @@ function memeChoice() {
     });
 }
 
-
+// like/dislike localStorage
 //     /* Access image by id and change
 //     the display property to block*/
 //     document.getElementById('image')
@@ -71,8 +73,7 @@ function memeChoice() {
 
 
 
-// // LIKE/DISLIKE BUTTONS - LOCAL STORAGE
-// // likeDis click event & localStorage
+// like/dislike Btns clickEvents
 // $("#likeDis").on("click", function (event) {
 //   event.preventDefault();
 //   var like = JSON.parse(localStorage.getItem("likeDis")) || [var dislike =]
@@ -94,3 +95,5 @@ function memeChoice() {
 //     console.log(`likeDisArr localStorage`);
 //   }
 // });
+
+// like/dislike localStorage
