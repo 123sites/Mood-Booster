@@ -34,43 +34,72 @@ function jokeChoice() {
 }
 
 function memeChoice() {
-  let meme = `https://reddit-meme.p.rapidapi.com/memes/top`;
+  let meme = `https://programming-memes-images.p.rapidapi.com/v1/memes`;
   fetch(meme, {
     headers: {
-      "x-rapidAPI-key": "e4424d5624mshff482b6755fbc8ep172344jsn21cfbb7115c2",
-      "x-rapidAPI-host": "reddit-meme.p.rapidapi.com",
+      'X-RapidAPI-Key': '52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f',
+      'X-RapidAPI-Host': 'programming-memes-images.p.rapidapi.com'
     },
- 
   })
-  
+    .then(function (response) {
+      console.log(response);
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      let img = document.createElement("img");
+      
+      img.src=data[Math.floor(Math.random() * data.length)].image
+      // let img = getElementById('meme');
+      // img ="data:image.meme/png,;base64,"+image_base64 +" getElementById('meme');
+      // <img src=""data:image/png;base64,"+image_base64 +""" alt=""alt text"" />;
+      console.log(img.meme);
+      document.querySelector("#display").appendChild(img);
+      // document.querySelector("#display").innerHTML="";
+      // document.querySelector("#display").append(h2);
+      document.querySelector(".getChoice").classList.add("hide");
+      document.querySelector("#results").classList.remove("hide");
+    });
+}
 
+//   document.querySelector("#display").innerHTML = img.meme;
+//   //     /* Access image by id and change
+//   // the display property to block*/
+//   document.getElementById('meme')
+//   .style.meme = "block";
+//   // document.querySelector("#display").innerHTML="";
+//   // document.querySelector("#display").append(h2);
+//   document.querySelector(".getChoice").classList.add("hide");
+//   document.querySelector("#results").classList.remove("hide");
 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>
+// let image = async meme => {
+//   const imageBlob = await fetchImage(image)
+//   const imageBase64 = meme.createObjectURL(imageBlob)
+//   console.log({imageBase64})
 
+//   let a = document.createElement('a')
+//   a.style.setProperty('display', 'none')
+//   document.body.appendChild(a)
+//   a.download = image.replace(/^.*[\\\/]/, '')
+//   a.href = imageBase64
+//   a.click()
+//   a.remove()
+// }
+// }
 
-  .then(function (response) {
-    console.log(response);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//   .then(res => res.json())
+//   .then(result => {
+//   console.log(result)
+//   img.src = result.message
+// })
+//   .catch(err=>console.log(err))
+//   .then(function (response) {
+//   console.log(response);
+//   return response.json();
 
-    return response.json();
-  })
-
-
-  //   .then(res => res.json())
-  //   .then(result => {
-  //   console.log(result)
-  //   img.src = result.message
-  // })
-  //   .catch(err=>console.log(err))
-  //   .then(function (response) {
-  //   console.log(response);
-  //   return response.json();
-  // });
-
-
-
-
-
-  // const image = document.getElementById("meme");
-
+// const image = document.getElementById("meme");
 
 // Converts any given blob into a base64 encoded string.
 // function convertBlobToBase64(blob) {
@@ -86,60 +115,41 @@ function memeChoice() {
 
 // }
 
+// document.querySelector("#display").img = img.top;
 
-  // document.querySelector("#display").img = img.top;
+// // document.querySelector("#display").innerHTML="";
+// // document.querySelector("#display").append(img);
 
-  // // document.querySelector("#display").innerHTML="";
-  // // document.querySelector("#display").append(img);
+// let img = document.createElement("img");
+// x.setAttribute("src", "meme");
+// x.setAttribute("width", "304");
+// x.setAttribute("height", "228");
+// x.setAttribute("alt", "img");
+// document.body.appendChild(img);
 
+// console.log("#display");
+// document.querySelector(".getChoice").classList.add("hide");
+// console.log(".add")
+// document.querySelector("#results").classList.remove("hide");
+// console.log(".remove")
 
-  // let img = document.createElement("img");
-  // x.setAttribute("src", "meme");
-  // x.setAttribute("width", "304");
-  // x.setAttribute("height", "228");
-  // x.setAttribute("alt", "img");
-  // document.body.appendChild(img);
+//   const a = document.createElement('a')
+// a.style.setProperty('display', 'none')
+// document.body.appendChild(a)
+// a.download = meme.replace(/^.*[\\\/]/, '')
+// a.href = imageBase64
+// a.click()
+// a.remove()
 
-  // console.log("#display");
-  // document.querySelector(".getChoice").classList.add("hide");
-  // console.log(".add")
-  // document.querySelector("#results").classList.remove("hide");
-  // console.log(".remove")
-
-  //   const a = document.createElement('a')
-  // a.style.setProperty('display', 'none')
-  // document.body.appendChild(a)
-  // a.download = meme.replace(/^.*[\\\/]/, '')
-  // a.href = imageBase64
-  // a.click()
-  // a.remove()
-
-
-  // .then(function (response) {
-  //   console.log(response);
-  //   return response.json();
-}
+// .then(function (response) {
+//   console.log(response);
+//   return response.json();
 
 // const fetchImage = async meme => {
 //   const response = await fetch(meme)
 //   const blob = await response.blob()
 
 //   return blob
-// },
-
-// const memeBtn = async meme => {
-//   const imageBlob = await fetchImage(meme)
-//   const imageBase64 = meme.createObjectURL(imageBlob)
-//   console.log({imageBase64})
-
-//   const a = document.createElement('a')
-//   a.style.setProperty('display', 'none')
-//   document.body.appendChild(a)
-//   a.download = meme.replace(/^.*[\\\/]/, '')
-//   a.href = imageBase64
-//   a.click()
-//   a.remove()
-// }
 // },
 
 // function show() {
