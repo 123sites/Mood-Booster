@@ -53,7 +53,6 @@ p {
     margin-bottom: 20px;
 }
 
-
 #jokeBtn, #memeBtn {
     font-size: 25px;
     margin: 0px;
@@ -63,8 +62,6 @@ p {
     cursor: pointer;
     font-size: 25px;
 }
-
-
 
 #likeBtn, #disBtn {
   background-color: #ab0303;
