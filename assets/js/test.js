@@ -58,41 +58,70 @@ function memeChoice() {
     });
 }
 // // like/dislike Btns clickEvents
-JSON.stringify(likeDisArray);
-{
-  var likeBtn = document.getElementById("likeBtn");
-  likeBtn.addEventListener("click", like);
+// JSON.stringify(likeDisArray);
+// {
+//   var likeBtn = document.getElementById("likeBtn");
+//   likeBtn.addEventListener("click", like);
 
-  var disBtn = document.getElementById("disBtn");
-  disBtn.addEventListener("click", dis);
+//   var disBtn = document.getElementById("disBtn");
+//   disBtn.addEventListener("click", dis);
+
+//   function like() {
+//     // Get like array from local storage joke/meme (*data attributes, then push, div ID display textContent/img)
+//     var like = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
+//     localStorage.setItem("likeStore");
+//     console.log(`likeStore`);
+//   }
+//   function dis() {
+//     var dis = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
+//     localStorage.setItem("disStore");
+//     console.log(`disStore`);
+//   }
+// }
+// LOCAL STORAGE??????????????????????????????????????
+// Dis/likeArray: When the user clicks like or dislike,
+// it's put into localStorage:
+if (window.localStorage){
+
+  var likeBtn = document.getElementById('likeBtn');
 
   function like() {
-    // Get like array from local storage joke/meme (*data attributes, then push, div ID display textContent/img)
-    var like = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
-    localStorage.setItem("likeStore");
-    console.log(`likeStore`);
-  }
-
-  function dis() {
-    var dis = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
-    localStorage.setItem("disStore");
-    console.log(`disStore`);
+  likeBtn.addEventListener('click', function(){
+  localStorage.setItem('like', likBtn.value),
+  }, false);
+  console.log(localStorage.setItem);
   }
 }
 
-// Dis/likeArray: When the user clicks like or dislike,
-// it's put into localStorage:
-$(document).ready(function () {
-  // Retrieves the like/dislike data and stores it into localStorage:
-  var likeDisArr = JSON.parse(localStorage.setItem("like"));
-  // likeDisArr = like/dislike array
-  if (likeDisArr !== null) {
-    Storage: var likeDisArr = JSON.parse(localStorage.setItem("dis"));
-    console.log(`likeDisArr localStorage`);
-  }
-});
+// function like() {
+//   var like = document.getElementById("#likeBtn").textContent || document.getElementById("#disBtn").src
+//   localStorage.setItem('likeStore');
+//   console.log(`likeStore`);
+// }
+// }
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// var disBtn = document.getElementById('disBtn');
+// disBtn.addEventListener("click", dis);
+
+// likeBtn.value= || document.getElementById("#likeBtn").src
+// localStorage.setItem("likeStore".);
+// console.log(`likeStore`);
+
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<
+// $(document).ready(function () {
+//   // Retrieves the like/dislike data and stores it into localStorage:
+//   var likeDisArr = JSON.parse(localStorage.setItem("like"));
+//   // likeDisArr = like/dislike array
+//   if (likeDisArr !== null) {
+//     Storage: var likeDisArr = JSON.parse(localStorage.setItem("dis"));
+//     console.log(`likeDisArr localStorage`);
+//   }
+// });
 // window.location.reload()
 
+
+// <<<<<<<<<<<<<<<<
 //   // Below stores the choice in localStorage
 //   localStorage.setItem("choice", JSON.stringify(like));
 //   console.log("choice", JSON.stringify(dis));
