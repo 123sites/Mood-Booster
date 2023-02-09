@@ -26,8 +26,6 @@ function jokeChoice() {
       h2.textContent = data.joke;
       console.log(data.joke);
       document.querySelector("#display").innerHTML = data.joke;
-      // document.querySelector("#display").innerHTML="";
-      // document.querySelector("#display").append(h2);
       document.querySelector(".getChoice").classList.add("hide");
       document.querySelector("#results").classList.remove("hide");
     });
@@ -57,82 +55,41 @@ function memeChoice() {
       document.querySelector("#results").classList.remove("hide");
     });
 }
-// // like/dislike Btns clickEvents
-// JSON.stringify(likeDisArray);
-// {
-//   var likeBtn = document.getElementById("likeBtn");
-//   likeBtn.addEventListener("click", like);
+// like/dislike Btns clickEvents
+var likeDisArray = JSON.parse(localStorage.getItem("likeStore")) || [];
 
-//   var disBtn = document.getElementById("disBtn");
-//   disBtn.addEventListener("click", dis);
+var likeBtn = document.getElementById("likeBtn");
+likeBtn.addEventListener("click", like);
 
-//   function like() {
-//     // Get like array from local storage joke/meme (*data attributes, then push, div ID display textContent/img)
-//     var like = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
-//     localStorage.setItem("likeStore");
-//     console.log(`likeStore`);
-//   }
-//   function dis() {
-//     var dis = document.getElementById("#likeBtn").textContent || document.getElementById("#likeBtn").src
-//     localStorage.setItem("disStore");
-//     console.log(`disStore`);
-//   }
-// }
-// LOCAL STORAGE??????????????????????????????????????
-// Dis/likeArray: When the user clicks like or dislike,
-// it's put into localStorage:
-if (window.localStorage){
+var disBtn = document.getElementById("disBtn");
+disBtn.addEventListener("click", dis);
 
-  var likeBtn = document.getElementById('likeBtn');
-
-  function like() {
-  likeBtn.addEventListener('click', function(){
-  localStorage.setItem('like', likBtn.value),
-  }, false);
-  console.log(localStorage.setItem);
+function like() {
+  var storage = {
+    type: "",
+    source: "",
+  };
+  console.log(document.getElementById("display").textContent);
+  console.log(document.getElementById("display").children);
+  if (document.getElementById("display").children.length) {
+    storage.source = document.getElementById("display").children[0].src;
+    storage.type = "meme";
+    console.log(storage);
+  } else {
+    storage.source = document.getElementById("display").textContent;
+    storage.type = "joke";
+    console.log(storage);
   }
+  // Get push, from storage
+  likeDisArray.push(storage);
+  localStorage.setItem("likeStore", JSON.stringify(likeDisArray));
+  window.location.reload();
+}
+function dis() {
+  console.log(`disStore`);
+  window.location.reload();
 }
 
-// function like() {
-//   var like = document.getElementById("#likeBtn").textContent || document.getElementById("#disBtn").src
-//   localStorage.setItem('likeStore');
-//   console.log(`likeStore`);
-// }
-// }
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-// var disBtn = document.getElementById('disBtn');
-// disBtn.addEventListener("click", dis);
-
-// likeBtn.value= || document.getElementById("#likeBtn").src
-// localStorage.setItem("likeStore".);
-// console.log(`likeStore`);
 
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<
-// $(document).ready(function () {
-//   // Retrieves the like/dislike data and stores it into localStorage:
-//   var likeDisArr = JSON.parse(localStorage.setItem("like"));
-//   // likeDisArr = like/dislike array
-//   if (likeDisArr !== null) {
-//     Storage: var likeDisArr = JSON.parse(localStorage.setItem("dis"));
-//     console.log(`likeDisArr localStorage`);
-//   }
-// });
-// window.location.reload()
 
-
-// <<<<<<<<<<<<<<<<
-//   // Below stores the choice in localStorage
-//   localStorage.setItem("choice", JSON.stringify(like));
-//   console.log("choice", JSON.stringify(dis));
-// }
-
-// like/dislike localStorage
-//     /* Access image by id and change
-//     the display property to block*/
-//     document.getElementById('image')
-//             .style.display = "block";
-
-//     document.getElementById('memeBtn')
-//             .style.display = "none";
-// }
