@@ -92,10 +92,16 @@ function dis() {
 
 // Favorites button show upon upload, show top-left, hide after clicked. Show again upon upload.
 var favoritesBtn = document.getElementById("favoritesBtn");
-favoritesBtn.addEventListener("click", );
+favoritesBtn.addEventListener("click",          );
+
+function favoritesBtn() {
+
+}
 
 // Return button shows only after favorites is clicked, show top-left same as favorites.
 // Hide button after click return.
 var returnBtn = document.getElementById("returnBtn");
-returnBtn.addEventListener("click", );
+returnBtn.addEventListener("click",           );
 
+function returnBtn() {
+}
