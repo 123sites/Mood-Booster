@@ -86,22 +86,29 @@ function like() {
   window.location.reload();
 }
 function dis() {
-  console.log(`disStore`);
+  console.log("disStore");
   window.location.reload();
 }
 
 // Favorites button show upon upload, show top-left, hide after clicked. Show again upon upload.
 var favoritesBtn = document.getElementById("favoritesBtn");
-favoritesBtn.addEventListener("click",          );
+favoritesBtn.addEventListener("click", favoritesBtn);
+console.log(favoritesBtn);
 
 function favoritesBtn() {
+  // Get push, from storage
+  likeDisArray.push(storage);
+  localStorage.setItem("likeStore", JSON.stringify(likeDisArray));
+  console.log("push from localStorage")
 
 }
 
 // Return button shows only after favorites is clicked, show top-left same as favorites.
 // Hide button after click return.
 var returnBtn = document.getElementById("returnBtn");
-returnBtn.addEventListener("click",           );
+returnBtn.addEventListener("click", returnBtn);
 
 function returnBtn() {
+  window.location.reload();
+  console.log(returnBtn)
 }
