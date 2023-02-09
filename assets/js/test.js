@@ -89,3 +89,13 @@ function dis() {
   console.log(`disStore`);
   window.location.reload();
 }
+
+// Favorites button
+var favoritesBtn = document.getElementById("favoritesBtn");
+favoritesBtn.addEventListener("click", );
+
+
+// Return button
+var returnBtn = document.getElementById("returnBtn");
+returnBtn.addEventListener("click", );
+
