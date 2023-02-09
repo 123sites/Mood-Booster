@@ -90,12 +90,12 @@ function dis() {
   window.location.reload();
 }
 
-// Favorites button
+// Favorites button show upon upload, show top-left, hide after clicked. Show again upon upload.
 var favoritesBtn = document.getElementById("favoritesBtn");
 favoritesBtn.addEventListener("click", );
 
-
-// Return button
+// Return button shows only after favorites is clicked, show top-left same as favorites.
+// Hide button after click return.
 var returnBtn = document.getElementById("returnBtn");
 returnBtn.addEventListener("click", );
 
