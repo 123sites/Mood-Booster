@@ -89,8 +89,3 @@ function dis() {
   console.log(`disStore`);
   window.location.reload();
 }
-
-
-
-
-
