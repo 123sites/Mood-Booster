@@ -41,29 +41,37 @@ p {
 }
 
 #display {
-    line-height: inherit;
-    width: auto;
-    display: flex;
-    font-weight: bold;
-    max-width: 100%;
-    max-height: 80%;
-    margin: 129px;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+  line-height: inherit;
+  width: auto;
+  display: flex;
+  font-weight: bold;
+  max-width: 100%;
+  max-height: 80%;
+  margin: 129px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
-#jokeBtn, #memeBtn {
-    font-size: 25px;
-    margin: 0px;
-    padding: 30px;
-    border-style: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 25px;
+#getChoice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#likeBtn, #disBtn {
+#jokeBtn,
+#memeBtn {
+  font-size: 25px;
+  margin: 0px;
+  padding: 15px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#likeBtn,
+#disBtn {
   background-color: #ab0303;
   border-width: 10px;
   border-color: black;
@@ -78,7 +86,33 @@ p {
 }
 
 #disBtn {
-    padding: 12px 23px;
+  padding: 12px 23px;
+}
+
+
+#favoritesBtn {
+  display: flex;
+  font-size: 25px;
+  margin: 0px;
+  padding-left: 20px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  justify-items: left;
+}
+
+
+#returnBtn {
+  display: flex;
+  font-size: 25px;
+  margin: 0px;
+  padding-left: 20px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  justify-items: left;
 }
 
 .hide {

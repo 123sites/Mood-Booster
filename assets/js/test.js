@@ -64,6 +64,7 @@ likeBtn.addEventListener("click", like);
 var disBtn = document.getElementById("disBtn");
 disBtn.addEventListener("click", dis);
 
+// Local storage
 function like() {
   var storage = {
     type: "",
@@ -83,32 +84,138 @@ function like() {
   // Get push, from storage
   likeDisArray.push(storage);
   localStorage.setItem("likeStore", JSON.stringify(likeDisArray));
-  window.location.reload();
+  setTimeout(function (){
+    window.location.reload();
+  },500);
 }
 function dis() {
-  console.log("disStore");
+  console.log(`disStore`);
   window.location.reload();
 }
+// ABOVE IS DONE!!!!!!!!!!!!!!!!!!!!!
 
-// Favorites button show upon upload, show top-left, hide after clicked. Show again upon upload.
-var favoritesBtn = document.getElementById("favoritesBtn");
-favoritesBtn.addEventListener("click", favoritesBtn);
-console.log(favoritesBtn);
 
-function favoritesBtn() {
-  // Get push, from storage
-  likeDisArray.push(storage);
-  localStorage.setItem("likeStore", JSON.stringify(likeDisArray));
-  console.log("push from localStorage")
 
-}
+
+// var displayFavorites = document.getElementById("displayFavorites");
+// console.log("var displayFavorites");
+
+// displayFavorites.addEventListener("click", "favoritesBtn");
+// console.log("click", "favoritesBtn");
+
+
+
+  //  = JSON.parse(localStorage.getItem(like)));
+  // document.getItemById("display").like JSON.stringify(likeDisArray));
+
+
+
+
+// var works!
+// var favoritesBtn = document.getElementById("favoritesBtn");
+// console.log("var favoritesBtn");
+// favoritesBtn.addEventListener("click", "likeStore");
+// console.log("click", "likeStore");
+
+
+
+// function displayFavorites(){
+//   if(localStorage.getItem(like) != null){
+//   }
+
+
+
+
+
+
+
+// JSON.parse(localStorage.getItem("favorites"));
+//     // If there's likes stored in favorites, display it on the screen. 
+//     if(localStorage.getItem("likeStore") != null){
+//       document.getElementById("").innerHTML = JSON.parse(localStorage.getItem("likeStore")) || [];
+//       document.getElementById("").src = JSON.parse(localStorage.getItem("likeStore")) || [];
+//     }
+//   }
+// }
+
+
+// function favoritesBtn(){
+// let favorites = JSON.parse(localStorage.getItem(likeStore));
+// console.log(localStorage.setItem);
+// favoritesBtn.addEventListener("click", favorites);
+// document.querySelector(onclick).classList.add("hide");
+// document.querySelector(onload).classList.remove("hide");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// favorites.push(storage);
+// localStorage.setItem("favorites", JSON.stringify(likeStore));
+
+// favoritesBtn.addEventListener("click", "display");
+// console.log("favoritesBtn.addEventListener");
+
+// function favoritesBtn(){
+// window.localStorage.getItem("#favoritesBtn", "display");
+// console.log("getItem #favoritesBtn");
+// }
+
+// Error
+// var favoritesBtn = favoritesBtn.addEventListener("click", localStorage);
+// console.log("favoritesBtn.addEventListener")
+
+  // let favoritesBtn = localStorage.getItem(storage);
+//   var favoritesBtn = localStorage.getItem("likeStore", JSON.stringify(localStorage));
+//   // let getFavorites = JSON.parse(window.localStorage.getItem(storage));
+//   // document.getElementById("favoritesBtn").innerHTML = x;
+
+// // Favorites button show upon upload, show top-left, hide after clicked. Show again upon upload.
+// // var favoritesBtn = document.getElementById("favoritesBtn");
+// // favoritesBtn.addEventListener("click", likeDisArray);
+// console.log("var favorites");
+
+// var favoritesBtn = document.getElementById("favoritesBtn");
+
+// favoritesBtn.addEventListener("click", localStorage);
+
+// Get push, from storage
+// function favoritesBtn() {
+//   document.querySelector(onclick).add("hide");
+//   document.querySelector(window.location.reload()).remove("hide");
+
+  // var getFavorites = localStorage.getItem(storage);
+  // localStorage.getItem("likeStore", JSON.stringify(storage));
+  // let getFavorites = JSON.parse(window.localStorage.getItem(storage));
+  // document.getElementById("demo").innerHTML = x;
+
+
+
+
+
+
+
+
+
 
 // Return button shows only after favorites is clicked, show top-left same as favorites.
 // Hide button after click return.
-var returnBtn = document.getElementById("returnBtn");
-returnBtn.addEventListener("click", returnBtn);
+// var returnBtn = document.getElementById("returnBtn");
+// returnBtn.addEventListener("click", returnBtn);
 
-function returnBtn() {
-  window.location.reload();
-  console.log(returnBtn)
-}
+// function returnBtn() {
+//   document.querySelector(onload).classList.remove("hide");
+//   document.querySelector(onclick).classList.add("hide");
+//   window.location.reload();
+//   console.log(returnBtn);
+// }
