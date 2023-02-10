@@ -13,7 +13,6 @@ body {
   text-align: center;
 }
 
-
 p {
   font-size: 16px;
   font-weight: 400;
@@ -51,6 +50,20 @@ p {
   padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 20px;
+  height: auto;
+  min-height: fit-content;
+  word-wrap: break-word;
+  outline: 2px solid rgb(38, 31, 170);
+}
+
+#jokeBtn, #memeBtn {
+    font-size: 25px;
+    margin: 0px;
+    padding: 30px;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 #getChoice {
@@ -59,19 +72,7 @@ p {
   align-items: center;
 }
 
-#jokeBtn,
-#memeBtn {
-  font-size: 25px;
-  margin: 0px;
-  padding: 15px;
-  border-style: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 25px;
-}
-
-#likeBtn,
-#disBtn {
+#likeBtn, #disBtn {
   background-color: #ab0303;
   border-width: 10px;
   border-color: black;
@@ -89,7 +90,6 @@ p {
   padding: 12px 23px;
 }
 
-
 #favoritesBtn {
   display: flex;
   font-size: 25px;
@@ -101,7 +101,6 @@ p {
   font-size: 25px;
   justify-items: left;
 }
-
 
 #returnBtn {
   display: flex;
@@ -118,3 +117,4 @@ p {
 .hide {
   display: none;
 }
+

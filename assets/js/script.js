@@ -7,7 +7,6 @@ memeBtn.addEventListener("click", memeChoice);
 
 // If choose joke:
 function jokeChoice() {
-
   let joke = `https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`;
   fetch(joke, {
     params: {
