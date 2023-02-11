@@ -1,25 +1,33 @@
 * {
   font-family: Nunito, sans-serif;
-  font-weight: bold;
-  }  
+  font-weight: bolder;
+}
 
-h1, h2, h3 {
-  display: flex;
+h1,
+h2,
+h3 {
+  display: inline-flex;
   color: rgb(20, 6, 177);
   display: block;
   text-align: center;
   font-weight: bold;
-  margin-block: 50px;
-  padding-block: 75px;
+  margin-block: 0px;
+  padding-block: 0px;
+  justify-content: center;
 }
 
 h1 {
+  display: inline-flex;
   font-size: 50px;
   font-weight: bolder;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
-h2 { 
+h2 {
+  display: inline-flex;
   font-size: 35px;
+  margin: 5px;
 }
 
 h3 {
@@ -29,7 +37,7 @@ h3 {
 
 div {
   padding: 0px;
-  position:inherit;
+  position: inherit;
 }
 
 body {
@@ -39,110 +47,178 @@ body {
 }
 
 p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  word-wrap: break-word;
+  display: inline-flex;
+  font-size: 22px;
+  text-align: left;
   line-height: 35px;
-  margin: 30px 0;
-  opacity: 0;
+  margin: 20px 0px 10px 16px;
+  flex-direction: column;
+  color: rgb(5, 0, 79);
 }
 
-#rightSmiley {
- display: flex;
- position: absolute;
+.emoji-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#leftSmiley {
- display: flex;
- position: absolute;
+.space-around {
+  justify-content: space-around;
 }
 
-#display {
-  line-height: inherit;
+.mood-emoji {
+  width: 5%;
+}
+
+#displayMeme {
+  color: rgb(255, 196, 0);
   width: auto;
-  display: flex;
-  font-weight: bold;
-  max-width: 100%;
-  max-height: 80%;
-  margin: 129px;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  height: auto;
-  min-height: fit-content;
-  word-wrap: break-word;
-  outline: 2px solid rgb(38, 31, 170);
+  padding: 25px 20px;
+  background-color: rgb(20, 6, 130);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  
+    /* line-height: inherit;
+    max-width: 80%;
+    display: flex;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 129px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    min-height: fit-content;
+    word-wrap: break-word;
+    outline: 2px solid rgb(38, 31, 170);
+    flex-direction: column; */
 }
 
-#jokeBtn, #memeBtn {
-  padding: 30px;
+
+.cat {
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+#jokeBtn,
+#memeBtn {
+  padding: 20px;
+  border-style: inset;
+  border-color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 10px;
+  color: rgb(20, 6, 177);
+}
+
+#likeBtn,
+#disBtn {
+  padding: 20px;
   border-style: inset;
   border-color: whitesmoke;
   background-color: transparent;
   padding-block: 20px;
   cursor: pointer;
-  font-size: 25px;
-  color: red;
+  font-size: 30px;
+  border-radius: 10px;
+  color: rgb(20, 6, 177);
 }
 
-#getChoice {
+#results {
+  padding: 30px;
+  background-color: transparent;
+  padding-block: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: rgb(20, 6, 177);
+}
+
+
+
+.getChoice {
   display: flex;
+  padding: 0px;
   flex-direction: column;
   align-items: center;
 }
 
-#likeBtn, #disBtn {
-  background-color: #ab0303;
+/* .likeBtn,
+.disBtn {
+  background-color: transparent;
   border-width: 10px;
-  border-color: black;
-  font-size: 17px;
-  color: yellow;
-  padding: 12px 33px;
-  margin-top: 10px;
+  /* border-color: black; */
+  /* font-size: 17px;
+  color: rgb(20, 6, 177); */
+  /* padding: 5px 5px; */
+  /* margin-top: 100px;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
   text-align: center;
-}
-
-#disBtn {
-  padding: 12px 23px;
-}
+} */ 
 
 #favoritesBtn {
   display: flex;
+  font-weight: bolder;
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-bottom: 50px;
   border-style: none;
   background-color: transparent;
   cursor: pointer;
-  justify-items: left;
-  color: black bold;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 35px;
+  justify-content: left;
+  color: rgb(22, 9, 164);
   text-decoration: none;
 }
 
-#returnBtn {
+
+.container {
+  display: flex;
+}
+
+.container>div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#displayJokeStorage {
+  margin-top: 0px;
   display: flex;
   font-size: 25px;
+  font-weight: bold;
+}
+
+#displayMemeStorage {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#return,
+a {
+  display: flex;
+  font-weight: bolder;
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 15px;
   border-style: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 25px;
-  justify-items: left;
+  font-size: 35px;
+  justify-content: left;
+  color: rgb(20, 6, 177);
+  text-decoration: none;
+}
+
+.or {
+  font-size: 2.5rem;
+  margin: 15px;
 }
 
 .hide {
   display: none;
 }
-
-.or { 
-  font-family: Jazz LET, fantasy;
-  font-weight: 900;
-  font-size: 150%;
-}
-

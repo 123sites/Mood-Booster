@@ -7,71 +7,92 @@
     <title>Mood Booster</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Nunito Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <!-- Body -->
-
   <body>
-    <div>
+    <!-- Top div with Emojis & title. -->
+    <div class="emoji-container space-around">
+      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
+      <iframe
+        src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1"
+        class="mood-emoji"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+      <!-- <p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p> -->
+      <!-- Mood Booster at the top -->
       <div>
-        <!-- Mood Booster at the top -->
         <h1>Mood Booster</h1>
-        <div id="emojiContainer">
+      </div>
+      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
+      <iframe
+        src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1"
+        class="mood-emoji"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+      <!-- <p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p> -->
+    </div>
 
-          <div id="leftEmoji">
-            <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
-              <iframe src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1" width="10%" height="10%" 
-              style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </div><p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p>
-            
-            <div id="rightEmoji">
-              <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
-                <iframe src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1" width="10%" height="10%" 
-                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-              </div><p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p>
-            </div>
-            
-        <h2>Welcome!<h2>
-        <h3>Click a button below to get a joke or meme.</h3>
+    <!-- Subtitle -->
+    <div>
+      <h2>Welcome!</h2>
+    </div>
+    <div>
+      <h3>Click a button below to get a joke or meme.</h3>
+    </div>
+
+    <!-- Favorites & Return -->
+    <div class="favorites">
+      <a href="favorite.html" id="favoritesBtn">Favorites</a>
+    </div>
+
+    <!-- getChoice -->
+    <div class="getChoice">
+      <!-- Choice buttons -->
+      <div class="joke">
+        <button id="jokeBtn">Joke</button>
       </div>
 
-          <!-- Favorites & Return -->
-      <div class="favorites"></div>
-        <a href="favorite.html" id="favoritesBtn">Favorites</a>
-      </div>
+      <!-- Or -->
+      <div class="or">||</div>
 
-      <!-- getChoice -->
-      <div class="getChoice">
-        <!-- Choice buttons -->
-        <div class="joke">
-          <button id="jokeBtn">Joke</button>
-        </div>
-
-        <!-- Or -->
-        <div class="or">||</div>
-        
-        <!-- Meme -->
-        <div class="meme">
-          <button id="memeBtn">Meme</button>
-        </div>
-      </div>
-      <div id="results" class="descision hide">
-        <div id="display"></div>
-
-        <!-- Like/Dislike buttons -->
-        <div class="likeBtn">
-          <button id="likeBtn">Like</button>
-        </div>
-        <div class="disBtn">
-          <button id="disBtn">Dislike</button>
-        </div>
+      <!-- Meme -->
+      <div class="meme">
+        <button id="memeBtn">Meme</button>
       </div>
     </div>
 
-    <div id="cat">
-      <marquee  behavior="scroll" direction="left">        
-        <img src= "https://bestanimations.com/media/cats/1983247458animated-cat-gif-23.gif"
-        alt="Cat walking across the webpage."> 
-      </marquee>  
+    <!-- Like/Dislike buttons -->
+    <div id="results" class="descision hide">
+      <div id="displayMeme"></div>
+      <div class="likeBtn">
+        <button id="likeBtn">Like</button>
+      </div>
+
+      <div class="disBtn">
+        <button id="disBtn">Dislike</button>
+      </div>
+    </div>
+
+    <!-- Cat image -->
+    <div class="cat">
+      <marquee behavior="scroll" direction="left">
+        <img
+          src="https://bestanimations.com/media/cats/1983247458animated-cat-gif-23.gif"
+          alt="Cat walking across the webpage."
+        />
+      </marquee>
     </div>
 
     <!-- dayjs -->
