@@ -25,11 +25,6 @@ p {
   opacity: 0;
 }
 
-.fade {
-  opacity: 1;
-  transition: opacity 0.1s;
-}
-
 .box {
   width: 550px;
   padding: 40px 50px;
