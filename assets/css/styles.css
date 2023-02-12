@@ -36,6 +36,7 @@ h3 {
 div {
   padding: 0px;
   position: inherit;
+  max-width: 100%;
 }
 
 body {
@@ -75,7 +76,6 @@ margin-top: 100px;
   display: inline-flex;
   color: rgb(255, 196, 0);
   width: auto;
-  padding: 25px 20px;
   background-color: rgb(20, 6, 130);
   position: absolute;
   left: 50%;
@@ -119,27 +119,47 @@ margin-top: 100px;
   color: rgb(20, 6, 177);
 }
 
-.like,
-.dis {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-}
+#jokeBtn {
+  padding: 12px 30px 12px 30px;
+  }
+
 
 #likeBtn,
 #disBtn {
-  padding: 20px;
+  display: flex;
+  padding: 1rem 1rem;
   border-style: inset;
   border-color: whitesmoke;
   background-color: transparent;
-  padding-block: 20px;
   cursor: pointer;
   font-size: 30px;
   border-radius: 10px;
   color: rgb(20, 6, 177);
+  vertical-align: middle; 
+  margin: 15px;
+
+} 
+
+  /* border-style: inset;
+  border-color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 10px;
+  color: rgb(20, 6, 177);
+  margin-top: 200px; */
+
+
+#likeBtn {
+  padding: 20px;
+}
+
+#disBtn {
+  padding: 15px;
 }
 
 #results {
+  display: inline-flex;
   margin-top: 125px;
   padding: 35px;
   background-color: transparent;
@@ -178,7 +198,6 @@ margin-top: 100px;
   font-weight: bolder;
   margin: 0px;
   padding-left: 15px;
-  padding-bottom: 50px;
   border-style: none;
   background-color: transparent;
   cursor: pointer;
@@ -189,7 +208,6 @@ margin-top: 100px;
 }
 
 #container {
-  /* flex: 1; */
   flex-flow: column wrap;
   border: 2px solid blueviolet;
   margin: 7px;
@@ -284,15 +302,12 @@ img {
   background: green;
   margin: auto;
   padding: 0px;
+  align-items: center;
 }
 
-#displayJokeStorage {
-  
-}
+#displayJokeStorage {}
 
-#displayMemeStorage {
-
-}
+#displayMemeStorage {}
 
 /* display: inline-flex;
   position: relative;
@@ -344,3 +359,17 @@ a {
 .hide {
   display: none;
 }
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+/* @media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+} */
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} */
