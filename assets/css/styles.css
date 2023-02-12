@@ -34,7 +34,6 @@ h3 {
 }
 
 div {
-  padding: 5px;
   position: inherit;
   max-width: 100%;
 }
@@ -49,9 +48,13 @@ p {
   display: inline-flex;
   font-size: 22px;
   text-align: center;
-  margin: 0px 330px 36px 41px;
+  margin: 0px 155px 71px 30px;
   flex-direction: column;
   color: rgb(20, 6, 177);
+}
+
+img {
+  margin: 130px;
 }
 
 .emoji-container {
@@ -84,8 +87,8 @@ margin-top: 100px;
 }
 
 .cat {
-  padding-bottom: 15px;
-  padding-top: 5px;
+  /* padding-bottom: 15px;
+  padding-top: 5px; */
 }
 
 #jokeBtn,
@@ -211,14 +214,10 @@ margin-top: 100px;
   font-weight: bold;
 }
 
-img {
-  margin: 115px;
-}
-
 
 #displayJokeStorage {
   align-items: left;
-  margin-top: 145rem;
+  margin-top: 175rem;
 }
 
 #displayMemeStorage {
