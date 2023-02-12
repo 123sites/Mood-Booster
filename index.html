@@ -49,7 +49,7 @@
       <h2>Welcome!</h2>
     </div>
     <div>
-      <h3>Click a button below to get a joke or meme.</h3>
+      <h3>Click one of the buttons below to get a joke or meme.</h3>
     </div>
 
     <!-- Favorites & Return -->
@@ -57,34 +57,35 @@
       <a href="favorite.html" id="favoritesBtn">Favorites</a>
     </div>
 
-    <!-- getChoice -->
-    <div class="getChoice">
-      <!-- Choice buttons -->
-      <div class="joke">
-        <button id="jokeBtn">Joke</button>
+    <div class="allButtonsContainer">
+      <!-- getChoice -->
+      <div class="getChoice">
+        <!-- Choice buttons -->
+        <div class="joke">
+          <button id="jokeBtn">Joke</button>
+        </div>
+
+        <!-- Or -->
+        <div class="or">||</div>
+
+        <!-- Meme -->
+        <div class="meme">
+          <button id="memeBtn">Meme</button>
+        </div>
       </div>
 
-      <!-- Or -->
-      <div class="or">||</div>
+      <!-- Like/Dislike buttons -->
+      <div id="results" class="descision hide">
+        <div id="display"></div>
+        <div class="like">
+          <button id="likeBtn">Like</button>
+        </div>
 
-      <!-- Meme -->
-      <div class="meme">
-        <button id="memeBtn">Meme</button>
+        <div class="dis">
+          <button id="disBtn">Dislike</button>
+        </div>
       </div>
     </div>
-
-    <!-- Like/Dislike buttons -->
-    <div id="results" class="descision hide">
-      <div id="displayMeme"></div>
-      <div class="likeBtn">
-        <button id="likeBtn">Like</button>
-      </div>
-
-      <div class="disBtn">
-        <button id="disBtn">Dislike</button>
-      </div>
-    </div>
-
     <!-- Cat image -->
     <div class="cat">
       <marquee behavior="scroll" direction="left">
