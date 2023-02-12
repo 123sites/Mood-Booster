@@ -34,7 +34,7 @@ h3 {
 }
 
 div {
-  padding: 0px;
+  padding: 5px;
   position: inherit;
   max-width: 100%;
 }
@@ -212,8 +212,7 @@ margin-top: 100px;
 }
 
 img {
-  border: purple;
-  margin: 5px;
+  margin: 115px;
 }
 
 
