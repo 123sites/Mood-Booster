@@ -29,30 +29,33 @@ function jokeChoice() {
     });
 }
 
-// If choose meme:
-function memeChoice() {
-  let meme = `https://programming-memes-images.p.rapidapi.com/v1/memes`;
-  fetch(meme, {
-    headers: {
-      "X-RapidAPI-Key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
-      "X-RapidAPI-Host": "programming-memes-images.p.rapidapi.com",
-    },
-  })
-    .then(function (response) {
-      console.log(response);
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      let img = document.createElement("img");
+//    'X-RapidAPI-Key': '7e3f314b4cmshae88aaf3a154785p17f36cjsn1217a1162748',
+// 'X-RapidAPI-Key': '55a44f98f7msh4abd44448b828b2p1d99a3jsne7c516953ceb',
 
-      img.src = data[Math.floor(Math.random() * data.length)].image;
-      console.log(img.meme);
-      document.querySelector("#display").appendChild(img);
-      document.querySelector(".getChoice").classList.add("hide");
-      document.querySelector("#results").classList.remove("hide");
-    });
-}
+// If choose meme:
+// function memeChoice() {
+//   let meme = `https://programming-memes-images.p.rapidapi.com/v1/memes`;
+//   fetch(meme, {
+//     headers: {
+//       "X-RapidAPI-Key": "52449e7faemsh20985c2307930f2p15b4a7jsn86daa9a9788f",
+//       "X-RapidAPI-Host": "programming-memes-images.p.rapidapi.com",
+//     },
+//   })
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       let img = document.createElement("img");
+
+//       img.src = data[Math.floor(Math.random() * data.length)].image;
+//       console.log(img.meme);
+//       document.querySelector("#display").appendChild(img);
+//       document.querySelector(".getChoice").classList.add("hide");
+//       document.querySelector("#results").classList.remove("hide");
+//     });
+// }
 // like/dislike Btns clickEvents
 var likeDisArray = JSON.parse(localStorage.getItem("likeStore")) || [];
 
