@@ -15,11 +15,11 @@ function jokeChoice() {
     },
   })
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      // console.log(data);
       let h2 = document.createElement("h2");
       h2.textContent = data.joke;
       console.log(data.joke);
@@ -42,15 +42,15 @@ function memeChoice() {
     },
   })
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      // console.log(data);
       let img = document.createElement("img");
 
       img.src = data[Math.floor(Math.random() * data.length)].image;
-      console.log(img.meme);
+      // console.log(img.meme);
       document.querySelector("#display").appendChild(img);
       document.querySelector(".getChoice").classList.add("hide");
       document.querySelector(".results").classList.remove("hide");
@@ -71,16 +71,16 @@ function like() {
     type: "",
     source: "",
   };
-  console.log(document.getElementById("display").textContent);
-  console.log(document.getElementById("display").children);
+  // console.log(document.getElementById("display").textContent);
+  // console.log(document.getElementById("display").children);
   if (document.getElementById("display").children.length) {
     storage.source = document.getElementById("display").children[0].src;
     storage.type = "meme";
-    console.log(storage);
+    // console.log(storage);
   } else {
     storage.source = document.getElementById("display").textContent;
     storage.type = "joke";
-    console.log(storage);
+    // console.log(storage);
   }
   // Get push, from storage
   likeDisArray.push(storage);
@@ -90,6 +90,6 @@ function like() {
   },500);
 }
 function dis() {
-  console.log(`disStore`);
+  // console.log(`disStore`);
   window.location.reload();
 }
