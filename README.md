@@ -18,10 +18,11 @@ Kevin Uriah McCarthy
 Meghan O'Brian
 Michele "Chel" Freitas
 
-## GIFS
+## GIFs
 
-[GIF Showing the joke, meme, like, and dislike]()
-[GIF showing the clients favorites]()
+[Laptop View](./assets/img/Mood%20Booster.gif)
+
+[Responsive View](./assets/img/Mood%20Booster%20(1).gif)
 
 ## License 
 

@@ -30,6 +30,10 @@ h2 {
   margin: 5px;
 }
 
+h3 {
+  color: rgb(20, 6, 177);
+}
+
 #fav {
   border-style: inset;
   border-color: whitesmoke;
@@ -49,7 +53,6 @@ div {
 body {
   background-image: linear-gradient(to right, #ff0000, #ffff00, #fbb000);
   font-size: 20px;
-  text-align: center;
 }
 
 p {
@@ -79,7 +82,6 @@ a {  border-style: inset;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 15px;
   padding: 0px;
 }
 
@@ -151,20 +153,13 @@ a {  border-style: inset;
 }
 
 .results {
-  border-style: inset;
-  border-color: whitesmoke;
-  background-color: transparent;
+  display: flex;
+  justify-content: start;
+  min-width: 100%;
   cursor: pointer;
   font-size: 30px;
   border-radius: 10px;
   color: rgb(20, 6, 177);
-  /* display: inline-block;
-  margin: 10px;
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 30px; */
 }
 
 .getChoice {
@@ -175,16 +170,23 @@ a {  border-style: inset;
 }
 
 #favoritesBtn {
+  display: flex;
+  justify-content: start;
   border-radius: 10px;
   cursor: pointer;
   border-style: inset;
   border-color: whitesmoke;
   background-color: transparent;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(20, 6, 177);
+  margin-bottom: 60px;
 }
 
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 #container {
   display: flex;
@@ -278,11 +280,9 @@ a {
 
 @media screen and (max-width: 900px) {
 
-  h2,
   h3 {
     margin: 5px;
     font-size: 18px;
-    /* width: 100%; */
   }
 }
 
