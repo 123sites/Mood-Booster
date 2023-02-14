@@ -20,30 +20,20 @@
   <body>
     <!-- Top div with Emojis & title. -->
     <div class="emoji-container space-around">
-      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
-      <iframe
-        src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1"
-        alt="giphy smiley emoji"
-        class="mood-emoji"
-        frameborder="0"
-        class="giphy-embed"
-        allowfullscreen
-      ></iframe>
-      <!-- <p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p> -->
+      <img
+        src="https://media.giphy.com/media/WkrumwVCIlI0PzYzT1/giphy.gif" 
+        alt="emoji smiley laughing"
+        class="gif"
+      />
       <!-- Mood Booster at the top -->
       <div>
         <h1>Mood Booster</h1>
       </div>
-      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> -->
-      <iframe
-        src="https://giphy.com/embed/WkrumwVCIlI0PzYzT1"
-        alt="giphy smiley emoji"
-        class="mood-emoji"
-        frameborder="0"
-        class="giphy-embed"
-        allowfullscreen
-      ></iframe>
-      <!-- <p><a href="https://giphy.com/stickers/emoji-the-iconic-brand-lol-WkrumwVCIlI0PzYzT1">via GIPHY</a></p> -->
+      <img
+        src="https://media.giphy.com/media/WkrumwVCIlI0PzYzT1/giphy.gif"
+        alt="emoji smiley laughing"
+        class="gif"
+      />
     </div>
 
     <!-- Subtitle -->
@@ -75,25 +65,25 @@
       </div>
     </div>
 
-    <div>
-      <!-- Like/Dislike buttons -->
-      <div id="results" class="descision hide">
-        <div id="display">
-          <div class="like">
-            <button id="likeBtn">Like</button>
-          </div>
+    <!-- Like/Dislike buttons -->
+    <div id="results" class="decision results hide">
+      <div id="display"></div>
+      <div class="likeClick">
+        <div class="like">
+          <button id="likeBtn">Like</button>
+        </div>
 
-          <div class="dis">
-            <button id="disBtn">Dislike</button>
-          </div>
+        <div class="dis">
+          <button id="disBtn">Dislike</button>
         </div>
       </div>
     </div>
+
     <!-- Cat image -->
     <div class="cat">
       <marquee behavior="scroll" direction="left">
-        <img
-          src="https://bestanimations.com/media/cats/1983247458animated-cat-gif-23.gif"
+        <img class="cat"
+          src="https://bestanimations.com/media/cats/1983247458animated-cat-gif-23.gif" width="30%" height="30%"
           alt="Cat walking across the webpage. GeeksforGeeks logo"
         />
       </marquee>

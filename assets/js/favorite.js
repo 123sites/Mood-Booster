@@ -32,7 +32,6 @@ if (likeStore) {
   console.log(memesFromLS);
 
   // Read into localStorage and get all the memes.
-
   var displayMemeStorage = document.querySelector("#displayMemeStorage");
   for (i = 0; i < memesFromLS.length; i++) {
     var memeDisplay = document.createElement("img");

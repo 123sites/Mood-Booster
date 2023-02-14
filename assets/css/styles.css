@@ -7,7 +7,7 @@
 h1,
 h2,
 h3 {
-  display: inline-flex;
+  display: flex;
   color: rgb(20, 6, 177);
   text-align: center;
   font-weight: bold;
@@ -33,63 +33,64 @@ h3 {
   padding: 10px;
 }
 
-div {
+/* div {
   position: inherit;
   max-width: 100%;
-}
+} */
 
 body {
   background-image: linear-gradient(to right, #ff0000, #ffff00, #fbb000);
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 p {
-  display: inline-flex;
+  display: flex;
   font-size: 22px;
   text-align: center;
-  margin: 0px 155px 71px 30px;
   flex-direction: column;
   color: rgb(20, 6, 177);
 }
 
 img {
-  margin: 130px;
+  margin-bottom: 15px;
 }
 
 .emoji-container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 15px;
+  padding: 0px;
 }
 
 .space-around {
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.mood-emoji {
+/* .mood-emoji {
   width: 5%;
-}
+} */
 
 #display {
-  display: inline-flex;
+  display: flex;
+  margin: auto;
+  padding: 20px;
   color: rgb(255, 196, 0);
   width: auto;
   background-color: rgb(20, 6, 130);
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 20px;
 }
 
 .cat {
-  /* padding-bottom: 15px;
-  padding-top: 5px; */
+  display: flex;
+  /* padding-bottom: 15px; */
+  padding: 0px;
+  margin: -35px;
 }
 
 #jokeBtn,
 #memeBtn {
-  padding: 20px;
   border-style: inset;
   border-color: whitesmoke;
   background-color: transparent;
@@ -100,14 +101,18 @@ img {
 }
 
 #jokeBtn {
-  padding: 12px 30px 12px 30px;
-  }
+  padding: 6px 18px 11px 16px;
+}
+
+#memeBtn {
+  padding: 6px 18px 11px 16px;
+}
 
 
 #likeBtn,
 #disBtn {
   /* display: flex; */
-  padding: 1rem 1rem;
+  padding: 11px;
   border-style: inset;
   border-color: whitesmoke;
   background-color: transparent;
@@ -115,26 +120,29 @@ img {
   font-size: 30px;
   border-radius: 10px;
   color: rgb(20, 6, 177);
-  vertical-align: middle; 
+  vertical-align: middle;
   margin: 15px;
-
-} 
-
-  /* margin-top: 200px; */ 
-
-
-#likeBtn {
-  padding: 20px;
 }
 
-#disBtn {
-  padding: 15px;
+.gif {
+  margin: 15px;
+  max-width: 50px;
+  min-width: 40px;
+  height: auto;
 }
 
-#results {
-  display: inline-flex;
-  margin-top: 125px;
-  padding: 35px;
+.likeClick {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  /* padding: 35px; */
   background-color: transparent;
   padding-block: 20px;
   cursor: pointer;
@@ -144,7 +152,7 @@ img {
 
 .getChoice {
   display: flex;
-  padding: 0px;
+  padding: 15px;
   flex-direction: column;
   align-items: center;
 }
@@ -152,7 +160,7 @@ img {
 #favoritesBtn {
   display: flex;
   font-weight: bolder;
-  margin: 0px;
+  margin: px;
   padding-left: 15px;
   border-style: none;
   background-color: transparent;
@@ -164,15 +172,13 @@ img {
 }
 
 #container {
-  height: 100px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-top: 20px;
 }
 
 .jokeContainer {
   display: inline-block;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   margin-right: 0px;
   font-size: 25px;
   font-weight: bold;
@@ -180,7 +186,7 @@ img {
 
 .memeContainer {
   display: inline-block;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   margin-right: 0px;
   font-size: 25px;
   font-weight: bold;
@@ -188,14 +194,20 @@ img {
 
 
 #displayJokeStorage {
-  align-items: left;
-  margin-top: 175rem;
+  margin-left: 35px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #displayMemeStorage {
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 30px;
+  display: flex;
   align-items: center;
-  margin-top: 475px;
-  margin-right: 300px;
+  flex-direction: column;
 }
 
 #return,
@@ -229,9 +241,55 @@ a {
   }
 } */
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media screen and (max-width: 900px) {
+
+  h1 {
+  margin: 5px;
+  display: inline-block;
+  font-size: 18px;
+  justify-content: center;
+  /* width: 100%; */
+}
+}
+
+@media screen and (max-width: 900px) {
+  .cat, img {
+    margin-top: 0px;
   }
-} */
+}
+
+@media screen and (max-width: 900px) {
+  a,
+  .or,
+  button,
+  p,
+  #favoritesBtn, 
+  #jokeBtn,
+  #memeBtn {
+    margin: 10px;
+    display: inline-block;
+    font-size: 18px;
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h2, h3 {
+    margin: 5px;
+    font-size: 18px;
+    /* width: 100%; */
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+  #displaJokeStorage, #displayMemeStorage {
+    display: inline-block;
+    margin-left: 15px;
+    flex-direction: column;
+
+  }
+}
+   
+
