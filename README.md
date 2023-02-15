@@ -14,8 +14,8 @@ The link to the Mood Booster App is at:
 
 ## Credits 
 
-Kevin Uriah McCarthy
-Meghan O'Brien
+Kevin Uriah McCarthy,
+Meghan O'Brien,
 Michele "Chel" Freitas
 
 ## GIFs
