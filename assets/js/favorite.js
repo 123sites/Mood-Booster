@@ -11,7 +11,7 @@ if (likeStore) {
     .map(function (item) {
       return item.source;
     });
-  console.log(jokesFromLS);
+  // console.log(jokesFromLS);
 
   var displayJokeStorage = document.querySelector("#displayJokeStorage");
   for (i = 0; i < jokesFromLS.length; i++) {
@@ -29,10 +29,9 @@ if (likeStore) {
     .map(function (item) {
       return item.source;
     });
-  console.log(memesFromLS);
+  // console.log(memesFromLS);
 
   // Read into localStorage and get all the memes.
-
   var displayMemeStorage = document.querySelector("#displayMemeStorage");
   for (i = 0; i < memesFromLS.length; i++) {
     var memeDisplay = document.createElement("img");

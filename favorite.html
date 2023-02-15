@@ -5,18 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./assets/js/favorite.js"></script>
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Favorites</title>
   </head>
 
   <body>
-    <div id="imgAndTextStorage">
-      <div>
-        <p id="displayJokeStorage"></p>
+    <!-- Emoji smile x 2 -->
+    <div class="emoji-container space-around">
+      <img
+        src="https://media.giphy.com/media/WkrumwVCIlI0PzYzT1/giphy.gif"
+        alt="emoji smiley laughing"
+        class="gif"
+      />
+      <!-- Favorites at the top -->
+      <div id="fav">
+        <h1>Favorites</h1>
       </div>
-      <div>
-        <p id="displayMemeStorage"></p>
+      <div class="emoji-container space-around">
+        <img
+          src="https://media.giphy.com/media/WkrumwVCIlI0PzYzT1/giphy.gif"
+          alt="emoji smiley laughing"
+          class="gif"
+        />
       </div>
+    </div>
+
+    <div id="return" class="decision return">
       <a href="./index.html">Return</a>
+    </div>
+
+    <!-- Text & img Storage -->
+    <div id="imgAndTextStorage">
+      <div id="container">
+        <div id="displayJokeStorage"></div>
+        <div id="displayMemeStorage"></div>
+      </div>
     </div>
   </body>
 </html>
