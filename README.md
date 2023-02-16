@@ -35,4 +35,4 @@ The client can view their favorites anytime by clicking onto "Favorites," in the
 
 ## Technology
 
-We used [API Link](https://rapidapi.com/humorapi/api/humor-jokes-and-memes) to get the jokes and [API Link](https://programming-memes-images.p.rapidapi.com/v1/memes) to get the memes.  We used local storage to store the information in-regards to what the client liked or disliked.  If they liked it, they can click "Favorites" to see all of them aganin.  This makes this app an MVP, because can provide information in-regards to what clients like.
+We used Google Fonts to improve the look of the text.  In addition, we have a responsive and laptop GIF to show how the app performs.  The API's used were [API Link](https://rapidapi.com/humorapi/api/humor-jokes-and-memes) to get the jokes and [API Link](https://programming-memes-images.p.rapidapi.com/v1/memes) to get the memes.  We used local storage to store the information in-regards to what the client liked or disliked.  If they liked it, they can click "Favorites" to see all of them aganin.  This makes our app an MVP, because it can provide information in-regards to what the client likes.
