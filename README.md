@@ -5,6 +5,7 @@ We wanted to make a user-friendly app that could randomly generate something moo
 
 ## Installation 
 
+
 There weren't any installations with this project.  
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Mood-Booster.git)
